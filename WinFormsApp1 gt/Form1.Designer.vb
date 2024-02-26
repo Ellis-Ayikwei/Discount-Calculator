@@ -46,9 +46,9 @@ Partial Class Form1
         lblstudName.Anchor = AnchorStyles.None
         lblstudName.AutoSize = True
         lblstudName.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point)
-        lblstudName.Location = New Point(182, 121)
+        lblstudName.Location = New Point(208, 161)
         lblstudName.Name = "lblstudName"
-        lblstudName.Size = New Size(188, 30)
+        lblstudName.Size = New Size(234, 37)
         lblstudName.TabIndex = 0
         lblstudName.Text = "Name of Student"
         ' 
@@ -57,10 +57,9 @@ Partial Class Form1
         TBoxNameofStu.AllowDrop = True
         TBoxNameofStu.Anchor = AnchorStyles.None
         TBoxNameofStu.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        TBoxNameofStu.Location = New Point(396, 122)
-        TBoxNameofStu.Margin = New Padding(3, 2, 3, 2)
+        TBoxNameofStu.Location = New Point(453, 163)
         TBoxNameofStu.Name = "TBoxNameofStu"
-        TBoxNameofStu.Size = New Size(507, 29)
+        TBoxNameofStu.Size = New Size(579, 34)
         TBoxNameofStu.TabIndex = 1
         ' 
         ' Programdropdown
@@ -69,11 +68,10 @@ Partial Class Form1
         Programdropdown.Anchor = AnchorStyles.None
         Programdropdown.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Programdropdown.FormattingEnabled = True
-        Programdropdown.Items.AddRange(New Object() {"BSc. Information Technology", "BSc. Telecommunications Engineering", "Bsc. Business Administration"})
-        Programdropdown.Location = New Point(182, 283)
-        Programdropdown.Margin = New Padding(3, 2, 3, 2)
+        Programdropdown.Items.AddRange(New Object() {"BSc. Information Technology", "BSc. Engineering", "Bsc. Business Administration"})
+        Programdropdown.Location = New Point(208, 377)
         Programdropdown.Name = "Programdropdown"
-        Programdropdown.Size = New Size(342, 29)
+        Programdropdown.Size = New Size(390, 36)
         Programdropdown.TabIndex = 2
         Programdropdown.Text = "Select programme"
         ' 
@@ -85,10 +83,9 @@ Partial Class Form1
         leveldropdown.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         leveldropdown.FormattingEnabled = True
         leveldropdown.Items.AddRange(New Object() {"100", "200", "300", "400"})
-        leveldropdown.Location = New Point(621, 283)
-        leveldropdown.Margin = New Padding(3, 2, 3, 2)
+        leveldropdown.Location = New Point(710, 377)
         leveldropdown.Name = "leveldropdown"
-        leveldropdown.Size = New Size(133, 29)
+        leveldropdown.Size = New Size(151, 36)
         leveldropdown.TabIndex = 2
         leveldropdown.Text = "Select level"
         ' 
@@ -99,10 +96,9 @@ Partial Class Form1
         Sessiondropdown.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Sessiondropdown.FormattingEnabled = True
         Sessiondropdown.Items.AddRange(New Object() {"Morning", "Evening", "Weekend"})
-        Sessiondropdown.Location = New Point(846, 283)
-        Sessiondropdown.Margin = New Padding(3, 2, 3, 2)
+        Sessiondropdown.Location = New Point(967, 377)
         Sessiondropdown.Name = "Sessiondropdown"
-        Sessiondropdown.Size = New Size(206, 29)
+        Sessiondropdown.Size = New Size(235, 36)
         Sessiondropdown.TabIndex = 2
         Sessiondropdown.Text = "Select Session"
         ' 
@@ -112,9 +108,9 @@ Partial Class Form1
         lblprgm.Anchor = AnchorStyles.None
         lblprgm.AutoSize = True
         lblprgm.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point)
-        lblprgm.Location = New Point(182, 250)
+        lblprgm.Location = New Point(208, 333)
         lblprgm.Name = "lblprgm"
-        lblprgm.Size = New Size(206, 25)
+        lblprgm.Size = New Size(261, 32)
         lblprgm.TabIndex = 0
         lblprgm.Text = "Programme Of Study "
         ' 
@@ -124,9 +120,9 @@ Partial Class Form1
         lblLevel.Anchor = AnchorStyles.None
         lblLevel.AutoSize = True
         lblLevel.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point)
-        lblLevel.Location = New Point(620, 250)
+        lblLevel.Location = New Point(709, 333)
         lblLevel.Name = "lblLevel"
-        lblLevel.Size = New Size(57, 25)
+        lblLevel.Size = New Size(72, 32)
         lblLevel.TabIndex = 0
         lblLevel.Text = "Level"
         ' 
@@ -136,9 +132,9 @@ Partial Class Form1
         lblSession.Anchor = AnchorStyles.None
         lblSession.AutoSize = True
         lblSession.Font = New Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point)
-        lblSession.Location = New Point(846, 250)
+        lblSession.Location = New Point(967, 333)
         lblSession.Name = "lblSession"
-        lblSession.Size = New Size(78, 25)
+        lblSession.Size = New Size(99, 32)
         lblSession.TabIndex = 0
         lblSession.Text = "Session"
         ' 
@@ -148,10 +144,9 @@ Partial Class Form1
         Btn1StuInfo.Anchor = AnchorStyles.None
         Btn1StuInfo.BackColor = Color.PaleGreen
         Btn1StuInfo.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point)
-        Btn1StuInfo.Location = New Point(200, 349)
-        Btn1StuInfo.Margin = New Padding(3, 2, 3, 2)
+        Btn1StuInfo.Location = New Point(229, 465)
         Btn1StuInfo.Name = "Btn1StuInfo"
-        Btn1StuInfo.Size = New Size(225, 73)
+        Btn1StuInfo.Size = New Size(257, 97)
         Btn1StuInfo.TabIndex = 3
         Btn1StuInfo.Text = "Display Student Infomation"
         Btn1StuInfo.UseVisualStyleBackColor = False
@@ -162,10 +157,9 @@ Partial Class Form1
         BtnClr.Anchor = AnchorStyles.None
         BtnClr.BackColor = Color.LightCyan
         BtnClr.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point)
-        BtnClr.Location = New Point(528, 349)
-        BtnClr.Margin = New Padding(3, 2, 3, 2)
+        BtnClr.Location = New Point(603, 465)
         BtnClr.Name = "BtnClr"
-        BtnClr.Size = New Size(225, 73)
+        BtnClr.Size = New Size(257, 97)
         BtnClr.TabIndex = 3
         BtnClr.Text = "Clear"
         BtnClr.UseVisualStyleBackColor = False
@@ -177,19 +171,18 @@ Partial Class Form1
         Button3.BackColor = Color.FromArgb(CByte(192), CByte(0), CByte(0))
         Button3.Font = New Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point)
         Button3.ForeColor = SystemColors.ButtonFace
-        Button3.Location = New Point(827, 349)
-        Button3.Margin = New Padding(3, 2, 3, 2)
+        Button3.Location = New Point(945, 465)
         Button3.Name = "Button3"
-        Button3.Size = New Size(225, 73)
+        Button3.Size = New Size(257, 97)
         Button3.TabIndex = 3
         Button3.Text = "Exit"
         Button3.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1198, 570)
+        ClientSize = New Size(1369, 760)
         Controls.Add(Button3)
         Controls.Add(BtnClr)
         Controls.Add(Btn1StuInfo)
@@ -201,7 +194,6 @@ Partial Class Form1
         Controls.Add(lblLevel)
         Controls.Add(lblprgm)
         Controls.Add(lblstudName)
-        Margin = New Padding(3, 2, 3, 2)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)

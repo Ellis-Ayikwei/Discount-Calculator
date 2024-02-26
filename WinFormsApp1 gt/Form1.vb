@@ -2,6 +2,22 @@
 Imports System.Xml.Schema
 Imports Microsoft.VisualBasic.Devices
 
+
+'''
+''' Calculates and displays student fee information based on selected program, level, and session.
+'''
+''' Provides a user interface with dropdowns for program, level, and session selection.
+''' Accepts student name input.
+''' Applies discounts based on selected options.
+''' Displays final fee calculation in a message box.
+'''
+''' Includes a "Clear" button to reset form fields.
+'''
+''' Dependencies:
+''' - System.Reflection.Emit
+''' - System.Xml.Schema
+''' - Microsoft.VisualBasic.Devices
+'''
 Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -29,20 +45,19 @@ Public Class Form1
 
     Private Sub Btn1StuInfo_Click(sender As Object, e As EventArgs) Handles Btn1StuInfo.Click
 
-
-
+        ' Declare variables for student information and fee calculation.
         Dim course, session As String
         Dim level As Integer
         Dim Discount As Decimal
         Dim StudentName As String = TBoxNameofStu.Text
 
 
-
+        ' Retrieve selected values from dropdowns.
         course = Programdropdown.SelectedItem
         session = Sessiondropdown.SelectedItem
         level = leveldropdown.SelectedItem
 
-
+        ' Validate input fields for completeness.
         If StudentName Is "" OrElse course Is Nothing OrElse session Is Nothing OrElse level = 0 Then
             MessageBox.Show("Please mae sure you enter your name and  select an option in each field.")
             Exit Sub
@@ -50,14 +65,17 @@ Public Class Form1
 
 
 
-
+        ' Apply baseFees based on Course.
         Dim baseFee As Decimal
         Select Case course
             Case "BSc. Information Technology" : baseFee = 4000
-            Case "BSc. Telecommunications Engineering" : baseFee = 4500
+            Case "BSc. Engineering" : baseFee = 4500
             Case "Bsc. Business Administration" : baseFee = 3500
         End Select
 
+
+
+        ' Apply discounts based on session and level.
         Dim Discount1 As Decimal
         Select Case session
             Case "Morning" : Discount1 = 0.05
@@ -75,9 +93,10 @@ Public Class Form1
         End Select
 
         Discount = Discount1 + Discount2
-        Dim finalFee = baseFee * (1 - Discount
-            )
+        Dim finalFee = baseFee * (1 - Discount)
 
+
+        ' Format and display student information and fee calculation in a message box.
         Dim message As String = String.Format(
     "Student Name: {0}{2}" & vbCrLf &
     "Program: {3}{2}" & vbCrLf &
