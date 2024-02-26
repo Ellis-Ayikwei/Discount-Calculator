@@ -4,7 +4,7 @@ This project implements a simple student fee calculator in Visual Basic.
 
 **Features:**
 
-* **User Interface:** Provides dropdowns for program, level, and session selection, an input field for student name, and a button to calculate and display fees. [User Interface Icon: user_interface.svg]
+* **User Interface:** Provides dropdowns for program, level, and session selection, an input field for student name, and a button to calculate and display fees. 
 * **Fee Calculation:** Calculates student fees based on selected program, level, and session. [Calculator Icon: calculator.svg]
 * **Discounts:** Applies discounts based on chosen session and level. [Discount Icon: discount.svg]
 * **Output:** Displays a summary message with student information, base fee, applied discounts, and final fee. [Output Icon: output.svg]
@@ -21,4 +21,4 @@ This project implements a simple student fee calculator in Visual Basic.
 
 **Note:**
 
-This is a basic example and may not represent best practices or comprehensive functionality for real-world scenarios. It serves as a demonstration of user interface elements and basic data manipulation in Visual Basic.
+This is a school assignment on visual basic.
